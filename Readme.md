@@ -35,6 +35,20 @@ Puedes verificar que la imagen se haya descargado correctamente utilizando el co
    ```bash
    docker run -di --name dam_web1 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd
    ```
+   5. **Realizar un 'hola mundo' en HTML y comprueba el acceso desde el navegador**:
+
+- Crea un archivo HTML, por ejemplo `index.html`, con el contenido "Hola Mundo" utilizando tu editor de código preferido.
+
+- Accede a `http://localhost:8000` desde tu navegador y deberías ver la página "Hola Mundo".
+
+6. **Crear otro contenedor 'dam_web2' con el mismo volumen y en otro puerto (por ejemplo, 9080)**:
+
+   ```bash
+   docker run -di --name dam_web2 -p 9080:80 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd
+   ```
+
+
+
 
 
 
