@@ -44,7 +44,7 @@ Puedes verificar que la imagen se haya descargado correctamente utilizando el co
 6. **Crear otro contenedor 'dam_web2' con el mismo volumen y en otro puerto (por ejemplo, 9080)**:
 
    ```bash
-   docker run -di --name dam_web2 -p 9080:80 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd
+   docker run -di --name dam_web2 -p 9080:80 -v $PWD/htdocs:/usr/local/apache2/htdocs/ httpd
    ```
 7. **Comprobar que los dos servidores 'sirven' la misma página**:
 
