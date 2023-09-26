@@ -46,7 +46,17 @@ Puedes verificar que la imagen se haya descargado correctamente utilizando el co
    ```bash
    docker run -di --name dam_web2 -p 9080:80 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd
    ```
+7. **Comprobar que los dos servidores 'sirven' la misma página**:
 
+ - Accede a las siguientes URLs en tu navegador:
+ - [http://localhost:9080](http://localhost:9080)
+ - [http://localhost:8000](http://localhost:8000)
+     
+     Ambas deben mostrar la página "Hola Mundo".
+
+8. **Realizar modificaciones en la página y comprobar que los dos servidores 'sirven' la misma página**:
+
+- Realiza las modificacionesque consideres en el archivo `index.html`. Luego, al acceder a los enlaces mencionados en el paso anterior, ambos deben mostrar la versión actualizada de la página.
 
 
 
