@@ -33,7 +33,7 @@ Puedes verificar que la imagen se haya descargado correctamente utilizando el co
 - Puedes montar un directorio de tu elección en tu sistema host con el directorio 'htdocs' del contenedor usando el siguiente comando:
 
    ```bash
-   docker run -di --name dam_web1 -v "$PWD"/htdocs:/usr/local/apache2/htdocs/ httpd
+   docker run -di --name dam_web1 -v $PWD /htdocs:/usr/local/apache2/htdocs/ httpd
    ```
    5. **Realizar un 'hola mundo' en HTML y comprueba el acceso desde el navegador**:
 
